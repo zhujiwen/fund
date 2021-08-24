@@ -1,4 +1,4 @@
-package com.fund.capture.tiantian.bean;
+package com.fund.capture.biz.tiantian.bean;
 
 import lombok.Data;
 

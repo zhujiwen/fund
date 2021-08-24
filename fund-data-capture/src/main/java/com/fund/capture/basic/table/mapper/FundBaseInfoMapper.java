@@ -1,6 +1,6 @@
-package com.fund.storage.mapper;
+package com.fund.capture.basic.table.mapper;
 
-import com.fund.storage.bean.FundBaseInfo;
+import com.fund.capture.basic.table.bean.FundBaseInfo;
 import tk.mybatis.mapper.common.Mapper;
 
 public interface FundBaseInfoMapper extends Mapper<FundBaseInfo> {

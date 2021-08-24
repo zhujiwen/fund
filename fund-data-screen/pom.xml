@@ -11,5 +11,27 @@
 
     <artifactId>fund-data-screen</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.fund</groupId>
+            <artifactId>fund-data-capture</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fund</groupId>
+            <artifactId>fund-data-storage</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fund</groupId>
+            <artifactId>fund-data-etl</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fund</groupId>
+            <artifactId>fund-data-analysis</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

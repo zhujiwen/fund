@@ -1,4 +1,4 @@
-package com.fund.capture.tiantian.bean;
+package com.fund.capture.biz.tiantian.bean;
 
 public class FundDetailInfoUrl {
     private String url = "http://api.fund.eastmoney.com/f10/lsjz?fundCode={fundCode}" +

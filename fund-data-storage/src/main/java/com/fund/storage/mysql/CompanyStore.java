@@ -1,7 +1,7 @@
 package com.fund.storage.mysql;
 
-import com.fund.storage.bean.Company;
-import com.fund.storage.mapper.CompanyMapper;
+import com.fund.capture.basic.table.bean.Company;
+import com.fund.capture.basic.table.mapper.CompanyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

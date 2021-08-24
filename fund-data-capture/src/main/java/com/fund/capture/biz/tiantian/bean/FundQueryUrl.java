@@ -1,4 +1,4 @@
-package com.fund.capture.tiantian.bean;
+package com.fund.capture.biz.tiantian.bean;
 
 /**
  * 按照开头关键字查找所有的资金

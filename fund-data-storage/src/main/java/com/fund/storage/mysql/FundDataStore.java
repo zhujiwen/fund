@@ -1,9 +1,9 @@
 package com.fund.storage.mysql;
 
-import com.fund.storage.bean.FundBaseInfo;
-import com.fund.storage.bean.FundDetailInfo;
-import com.fund.storage.mapper.FundBaseInfoMapper;
-import com.fund.storage.mapper.FundDetailInfoMapper;
+import com.fund.capture.basic.table.bean.FundBaseInfo;
+import com.fund.capture.basic.table.bean.FundDetailInfo;
+import com.fund.capture.basic.table.mapper.FundBaseInfoMapper;
+import com.fund.capture.basic.table.mapper.FundDetailInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

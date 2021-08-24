@@ -1,4 +1,4 @@
-package com.fund.storage.bean;
+package com.fund.capture.basic.table.bean;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.fund.capture.util;
+package com.fund.capture.basic.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,8 +7,6 @@ import java.io.PrintWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
-
-import static javafx.scene.input.DataFormat.URL;
 
 public class HttpUtils {
 
