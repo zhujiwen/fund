@@ -1,26 +1,183 @@
-2021-08-25 00:07:55.538  INFO 16032 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 16032 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:07:55.559  INFO 16032 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:07:56.161  WARN 16032 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:07:56.454  INFO 16032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:07:56.461  INFO 16032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:07:56.461  INFO 16032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:07:56.540  INFO 16032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:07:56.540  INFO 16032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
-2021-08-25 00:07:57.040  INFO 16032 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:07:57.041  INFO 16032 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:07:57.041  INFO 16032 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:07:57.041  INFO 16032 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:07:57.175  INFO 16032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:07:57.183  INFO 16032 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 2.016 seconds (JVM running for 3.203)
-2021-08-25 00:07:57.185  INFO 16032 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:07:57.208  INFO 16032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:07:57.293  INFO 16032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:07:57.322  INFO 16032 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集公司数据
-2021-08-25 00:08:48.664  WARN 16032 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s264ms573µs200ns).
-2021-08-25 00:08:48.777  INFO 16032 --- [main] ConditionEvaluationReportLoggingListener : 
+2021-08-26 00:00:00.047  INFO 2000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:00:00.050  INFO 2000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:00:00.051  INFO 2000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-26 00:00:24.515  INFO 6932 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 6932 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:00:24.530  INFO 6932 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:00:25.169  WARN 6932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:00:25.467  INFO 6932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:00:25.474  INFO 6932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:00:25.474  INFO 6932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:00:25.554  INFO 6932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:00:25.555  INFO 6932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
+2021-08-26 00:00:26.045  INFO 6932 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:00:26.045  INFO 6932 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:00:26.046  INFO 6932 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:00:26.046  INFO 6932 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:00:26.176  INFO 6932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:00:26.184  INFO 6932 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 2.056 seconds (JVM running for 3.218)
+2021-08-26 00:00:26.186  INFO 6932 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:00:26.209  INFO 6932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:00:26.299  INFO 6932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:00:26.407  INFO 6932 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:00:30.070  INFO 6932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:00:30.071  INFO 6932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:00:30.071  INFO 6932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-26 00:01:14.713  INFO 6932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-26 00:01:14.723  INFO 6932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-26 00:01:19.336  INFO 2172 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 2172 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:01:19.339  INFO 2172 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:01:19.924  WARN 2172 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:01:20.182  INFO 2172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:01:20.188  INFO 2172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:01:20.188  INFO 2172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:01:20.262  INFO 2172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:01:20.262  INFO 2172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 883 ms
+2021-08-26 00:01:20.690  INFO 2172 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:01:20.690  INFO 2172 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:01:20.690  INFO 2172 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:01:20.690  INFO 2172 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:01:20.757  INFO 2172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:01:20.764  INFO 2172 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.722 seconds (JVM running for 2.739)
+2021-08-26 00:01:20.766  INFO 2172 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:01:20.828  INFO 2172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:01:20.900  INFO 2172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:01:21.003  INFO 2172 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:01:53.573  INFO 2172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:01:53.573  INFO 2172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:01:53.574  INFO 2172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-26 00:02:15.340  INFO 9988 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 9988 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:02:15.340  INFO 9988 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:02:16.090  WARN 9988 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:02:16.444  INFO 9988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:02:16.451  INFO 9988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:02:16.452  INFO 9988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:02:16.530  INFO 9988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:02:16.530  INFO 9988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
+2021-08-26 00:02:17.044  INFO 9988 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:02:17.044  INFO 9988 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:02:17.044  INFO 9988 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:02:17.044  INFO 9988 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:02:17.124  INFO 9988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:02:17.133  INFO 9988 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 2.058 seconds (JVM running for 3.186)
+2021-08-26 00:02:17.135  INFO 9988 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:02:17.202  INFO 9988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:02:17.282  INFO 9988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:02:17.388  INFO 9988 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:05:32.222  INFO 9988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:05:32.222  INFO 9988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:05:32.223  INFO 9988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-26 00:06:29.972  INFO 3056 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 3056 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:06:29.972  INFO 3056 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:06:30.634  WARN 3056 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:06:30.924  INFO 3056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:06:30.934  INFO 3056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:06:30.934  INFO 3056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:06:31.014  INFO 3056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:06:31.014  INFO 3056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 972 ms
+2021-08-26 00:06:31.504  INFO 3056 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:06:31.504  INFO 3056 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:06:31.504  INFO 3056 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:06:31.504  INFO 3056 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:06:31.634  INFO 3056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:06:31.644  INFO 3056 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 2.086 seconds (JVM running for 3.281)
+2021-08-26 00:06:31.644  INFO 3056 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:06:31.674  INFO 3056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:06:31.754  INFO 3056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:06:31.866  INFO 3056 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:06:35.028  INFO 3056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:06:35.028  INFO 3056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:06:35.030  INFO 3056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-26 00:08:18.556  WARN 3056 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m46s691ms323µs600ns).
+2021-08-26 00:08:19.248  INFO 3056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-26 00:08:19.248  INFO 3056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-26 00:08:58.807  INFO 11220 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 11220 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:08:58.810  INFO 11220 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:08:59.440  WARN 11220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:08:59.734  INFO 11220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:08:59.741  INFO 11220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:08:59.742  INFO 11220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:08:59.824  INFO 11220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:08:59.824  INFO 11220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2021-08-26 00:09:00.324  INFO 11220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:09:00.324  INFO 11220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:09:00.325  INFO 11220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:09:00.325  INFO 11220 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:09:00.461  INFO 11220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:09:00.469  INFO 11220 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 2.072 seconds (JVM running for 3.336)
+2021-08-26 00:09:00.470  INFO 11220 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:09:00.493  INFO 11220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:09:00.584  INFO 11220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:09:00.699  INFO 11220 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:09:04.267  INFO 11220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:09:04.268  INFO 11220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:09:04.268  INFO 11220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-26 00:10:19.015  WARN 11220 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s329ms394µs299ns).
+2021-08-26 00:10:19.530  INFO 11220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-26 00:10:19.540  INFO 11220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-26 00:11:29.731  INFO 9264 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 9264 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:11:29.731  INFO 9264 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:11:30.272  WARN 9264 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:11:30.536  INFO 9264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:11:30.546  INFO 9264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:11:30.546  INFO 9264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:11:30.616  INFO 9264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:11:30.616  INFO 9264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 845 ms
+2021-08-26 00:11:31.028  INFO 9264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:11:31.028  INFO 9264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:11:31.028  INFO 9264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:11:31.028  INFO 9264 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:11:31.098  INFO 9264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:11:31.108  INFO 9264 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.667 seconds (JVM running for 2.815)
+2021-08-26 00:11:31.108  INFO 9264 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:11:31.168  INFO 9264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:11:31.238  INFO 9264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:11:31.348  INFO 9264 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:11:35.928  INFO 9264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:11:35.929  INFO 9264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:11:35.929  INFO 9264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-26 00:12:34.272  INFO 3376 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 3376 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:12:34.282  INFO 3376 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:12:34.813  WARN 3376 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:12:35.083  INFO 3376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:12:35.093  INFO 3376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:12:35.093  INFO 3376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:12:35.163  INFO 3376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:12:35.163  INFO 3376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 851 ms
+2021-08-26 00:12:35.598  INFO 3376 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:12:35.598  INFO 3376 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:12:35.598  INFO 3376 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:12:35.598  INFO 3376 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:12:35.668  INFO 3376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:12:35.678  INFO 3376 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.689 seconds (JVM running for 2.728)
+2021-08-26 00:12:35.678  INFO 3376 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
+2021-08-26 00:12:35.748  INFO 3376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:12:35.819  INFO 3376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:12:35.919  INFO 3376 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:12:37.707  INFO 3376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-26 00:12:37.707  INFO 3376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-26 00:12:37.708  INFO 3376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-26 00:47:18.625  INFO 5824 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 5824 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:47:18.625  INFO 5824 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:47:19.255  WARN 5824 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:47:19.536  INFO 5824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:47:19.546  INFO 5824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:47:19.546  INFO 5824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:47:19.626  INFO 5824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:47:19.626  INFO 5824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 961 ms
+2021-08-26 00:47:20.078  INFO 5824 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:47:20.078  INFO 5824 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:47:20.078  INFO 5824 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:47:20.078  INFO 5824 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:47:20.148  INFO 5824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:47:20.158  INFO 5824 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.904 seconds (JVM running for 3.276)
+2021-08-26 00:47:20.158  INFO 5824 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 开始查询本地是否包含公司的数据
+2021-08-26 00:47:20.218  INFO 5824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:47:20.288  INFO 5824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:47:20.398  INFO 5824 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:47:21.038  INFO 5824 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-25 00:08:48.796 ERROR 16032 --- [main] o.s.boot.SpringApplication               : Application run failed
+2021-08-26 00:47:21.089 ERROR 5824 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:785) [spring-boot-2.5.3.jar:2.5.3]
@@ -29,33 +186,37 @@ java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.3.jar:2.5.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.3.jar:2.5.3]
 	at com.fund.screen.WebApplication.main(WebApplication.java:15) [classes/:na]
-Caused by: org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '81052915' for key 'company.PRIMARY'
-### The error may exist in com/fund/capture/basic/table/mapper/CompanyMapper.java (best guess)
-### The error may involve com.fund.capture.basic.table.mapper.CompanyMapper.insert-Inline
+Caused by: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+### The error may exist in com/fund/capture/basic/table/mapper/FundDetailInfoMapper.java (best guess)
+### The error may involve com.fund.capture.basic.table.mapper.FundDetailInfoMapper.insert-Inline
 ### The error occurred while setting parameters
-### SQL: INSERT INTO company  ( id,name ) VALUES( ?,? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '81052915' for key 'company.PRIMARY'
-; Duplicate entry '81052915' for key 'company.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '81052915' for key 'company.PRIMARY'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247) ~[spring-jdbc-5.3.9.jar:5.3.9]
+### SQL: INSERT INTO fund_detail_info  ( id,fcode,fsrq,dwjz,ljjz,jzzzl ) VALUES( ?,?,?,?,?,? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+; Column 'id' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:87) ~[spring-jdbc-5.3.9.jar:5.3.9]
 	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.9.jar:5.3.9]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79) ~[spring-jdbc-5.3.9.jar:5.3.9]
 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88) ~[mybatis-spring-2.0.5.jar:2.0.5]
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.sun.proxy.$Proxy57.insert(Unknown Source) ~[na:na]
+	at com.sun.proxy.$Proxy59.insert(Unknown Source) ~[na:na]
 	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
 	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.5.jar:3.5.5]
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152) ~[mybatis-3.5.5.jar:3.5.5]
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.lambda$null$0(TiantianApplicationRunner.java:53) ~[classes/:na]
+	at com.sun.proxy.$Proxy66.insert(Unknown Source) ~[na:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture.captureFundDetailInfoToNewestDay(FundDetailInfoCapture.java:49) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture.lambda$initFundDetailInfo$0(FundDetailInfoCapture.java:34) ~[classes/:na]
 	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_211]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.lambda$initCompanyData$1(TiantianApplicationRunner.java:53) ~[classes/:na]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_211]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.initCompanyData(TiantianApplicationRunner.java:50) ~[classes/:na]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.run(TiantianApplicationRunner.java:40) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture.initFundDetailInfo(FundDetailInfoCapture.java:33) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture$$FastClassBySpringCGLIB$$b3d5208b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture$$EnhancerBySpringCGLIB$$f7f132c6.initFundDetailInfo(<generated>) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.TiantianApplicationRunner.run(TiantianApplicationRunner.java:45) ~[classes/:na]
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782) [spring-boot-2.5.3.jar:2.5.3]
 	... 5 common frames omitted
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '81052915' for key 'company.PRIMARY'
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.17.jar:8.0.17]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar:8.0.17]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar:8.0.17]
@@ -75,36 +236,32 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '8
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_211]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_211]
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	... 18 common frames omitted
+	... 21 common frames omitted
 
-2021-08-25 00:08:49.378  INFO 16032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-08-25 00:08:49.381  INFO 16032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-08-25 00:09:12.347  INFO 10000 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 10000 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:09:12.349  INFO 10000 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:09:12.929  WARN 10000 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:09:13.204  INFO 10000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:09:13.211  INFO 10000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:09:13.212  INFO 10000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:09:13.287  INFO 10000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:09:13.287  INFO 10000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
-2021-08-25 00:09:13.725  INFO 10000 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:09:13.725  INFO 10000 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:09:13.725  INFO 10000 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:09:13.726  INFO 10000 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:09:13.790  INFO 10000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:09:13.797  INFO 10000 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.729 seconds (JVM running for 2.736)
-2021-08-25 00:09:13.798  INFO 10000 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:09:13.870  INFO 10000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:09:13.949  INFO 10000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:09:13.977  INFO 10000 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集公司数据
-2021-08-25 00:09:15.130  INFO 10000 --- [main] c.f.c.b.t.TiantianApplicationRunner      : A的数据采集完毕
-2021-08-25 00:09:15.905  INFO 10000 --- [main] c.f.c.b.t.TiantianApplicationRunner      : B的数据采集完毕
-2021-08-25 00:09:16.529  INFO 10000 --- [main] c.f.c.b.t.TiantianApplicationRunner      : C的数据采集完毕
-2021-08-25 00:09:17.472  INFO 10000 --- [main] c.f.c.b.t.TiantianApplicationRunner      : D的数据采集完毕
-2021-08-25 00:09:17.495  INFO 10000 --- [main] ConditionEvaluationReportLoggingListener : 
+2021-08-26 00:47:21.503  INFO 5824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-26 00:47:21.503  INFO 5824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-26 00:47:52.679  INFO 14984 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 14984 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:47:52.679  INFO 14984 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:47:53.233  WARN 14984 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:47:53.503  INFO 14984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:47:53.503  INFO 14984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:47:53.503  INFO 14984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:47:53.583  INFO 14984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:47:53.583  INFO 14984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2021-08-26 00:47:54.014  INFO 14984 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:47:54.014  INFO 14984 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:47:54.014  INFO 14984 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:47:54.014  INFO 14984 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:47:54.094  INFO 14984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:47:54.104  INFO 14984 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.715 seconds (JVM running for 2.887)
+2021-08-26 00:47:54.104  INFO 14984 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 开始查询本地是否包含公司的数据
+2021-08-26 00:47:54.165  INFO 14984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:47:54.235  INFO 14984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:47:54.335  INFO 14984 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:47:54.775  INFO 14984 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-25 00:09:17.528 ERROR 10000 --- [main] o.s.boot.SpringApplication               : Application run failed
+2021-08-26 00:47:54.785 ERROR 14984 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:785) [spring-boot-2.5.3.jar:2.5.3]
@@ -113,171 +270,132 @@ java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.3.jar:2.5.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.3.jar:2.5.3]
 	at com.fund.screen.WebApplication.main(WebApplication.java:15) [classes/:na]
-Caused by: java.lang.NullPointerException: null
-	at com.fund.capture.basic.util.Parser.parseCompanyJson(Parser.java:16) ~[classes/:na]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.lambda$initCompanyData$1(TiantianApplicationRunner.java:52) ~[classes/:na]
+Caused by: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/fund/capture/basic/table/mapper/FundDetailInfoMapper.java (best guess)
+### The error may involve com.fund.capture.basic.table.mapper.FundDetailInfoMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO fund_detail_info  ( fcode,fsrq,dwjz,ljjz,jzzzl ) VALUES( ?,?,?,?,? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:251) ~[spring-jdbc-5.3.9.jar:5.3.9]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.9.jar:5.3.9]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88) ~[mybatis-spring-2.0.5.jar:2.0.5]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440) ~[mybatis-spring-2.0.5.jar:2.0.5]
+	at com.sun.proxy.$Proxy59.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.5.jar:3.5.5]
+	at com.sun.proxy.$Proxy66.insertSelective(Unknown Source) ~[na:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture.captureFundDetailInfoToNewestDay(FundDetailInfoCapture.java:49) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture.lambda$initFundDetailInfo$0(FundDetailInfoCapture.java:34) ~[classes/:na]
 	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_211]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.initCompanyData(TiantianApplicationRunner.java:50) ~[classes/:na]
-	at com.fund.capture.biz.tiantian.TiantianApplicationRunner.run(TiantianApplicationRunner.java:40) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture.initFundDetailInfo(FundDetailInfoCapture.java:33) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture$$FastClassBySpringCGLIB$$b3d5208b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.fund.capture.biz.tiantian.start.FundDetailInfoCapture$$EnhancerBySpringCGLIB$$9114a9e8.initFundDetailInfo(<generated>) ~[classes/:na]
+	at com.fund.capture.biz.tiantian.start.TiantianApplicationRunner.run(TiantianApplicationRunner.java:45) ~[classes/:na]
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782) [spring-boot-2.5.3.jar:2.5.3]
 	... 5 common frames omitted
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.5.jar:3.5.5]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.5.jar:3.5.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_211]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
+	... 21 common frames omitted
 
-2021-08-25 00:09:17.930  INFO 10000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-08-25 00:09:17.932  INFO 10000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-08-25 00:10:50.440  INFO 7596 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 7596 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:10:50.442  INFO 7596 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:10:50.970  WARN 7596 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:10:51.232  INFO 7596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:10:51.238  INFO 7596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:10:51.239  INFO 7596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:10:51.311  INFO 7596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:10:51.311  INFO 7596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 834 ms
-2021-08-25 00:10:51.727  INFO 7596 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:10:51.728  INFO 7596 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:10:51.728  INFO 7596 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:10:51.728  INFO 7596 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:10:51.796  INFO 7596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:10:51.804  INFO 7596 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.665 seconds (JVM running for 2.758)
-2021-08-25 00:10:51.805  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:10:51.865  INFO 7596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:10:51.939  INFO 7596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:10:51.963  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集公司数据
-2021-08-25 00:10:52.975  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : A的数据采集完毕
-2021-08-25 00:10:53.533  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : B的数据采集完毕
-2021-08-25 00:10:54.289  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : C的数据采集完毕
-2021-08-25 00:10:55.356  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : D的数据采集完毕
-2021-08-25 00:10:55.414  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : E的数据采集完毕
-2021-08-25 00:10:55.883  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : F的数据采集完毕
-2021-08-25 00:10:57.575  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : G的数据采集完毕
-2021-08-25 00:10:59.558  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : H的数据采集完毕
-2021-08-25 00:10:59.566  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : I的数据采集完毕
-2021-08-25 00:11:00.567  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : J的数据采集完毕
-2021-08-25 00:11:00.631  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : K的数据采集完毕
-2021-08-25 00:11:00.642  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : L的数据采集完毕
-2021-08-25 00:11:00.949  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : M的数据采集完毕
-2021-08-25 00:11:01.300  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : N的数据采集完毕
-2021-08-25 00:11:01.310  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : O的数据采集完毕
-2021-08-25 00:11:01.839  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : P的数据采集完毕
-2021-08-25 00:11:02.075  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : Q的数据采集完毕
-2021-08-25 00:11:02.375  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : R的数据采集完毕
-2021-08-25 00:11:02.893  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : S的数据采集完毕
-2021-08-25 00:11:03.583  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : T的数据采集完毕
-2021-08-25 00:11:03.594  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : U的数据采集完毕
-2021-08-25 00:11:03.602  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : V的数据采集完毕
-2021-08-25 00:11:03.672  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : W的数据采集完毕
-2021-08-25 00:11:04.633  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : X的数据采集完毕
-2021-08-25 00:11:05.182  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : Y的数据采集完毕
-2021-08-25 00:11:06.813  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : Z的数据采集完毕
-2021-08-25 00:11:06.814  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 采集公司数据完毕
-2021-08-25 00:11:06.815  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集所有基金的数据
-2021-08-25 00:24:42.876  INFO 7596 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 基金数据采集完毕
-2021-08-25 00:37:45.672  INFO 11448 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 11448 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:37:45.675  INFO 11448 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:37:46.197  WARN 11448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:37:46.462  INFO 11448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:37:46.468  INFO 11448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:37:46.468  INFO 11448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:37:46.545  INFO 11448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:37:46.546  INFO 11448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 832 ms
-2021-08-25 00:37:46.976  INFO 11448 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:37:46.976  INFO 11448 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:37:46.976  INFO 11448 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:37:46.977  INFO 11448 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:37:47.045  INFO 11448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:37:47.051  INFO 11448 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.681 seconds (JVM running for 2.759)
-2021-08-25 00:37:47.053  INFO 11448 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:37:47.115  INFO 11448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:37:47.197  INFO 11448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:37:47.230  INFO 11448 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集所有基金的数据
-2021-08-25 00:39:52.744  INFO 10608 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 10608 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:39:52.748  INFO 10608 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:39:53.283  WARN 10608 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:39:53.541  INFO 10608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:39:53.548  INFO 10608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:39:53.548  INFO 10608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:39:53.621  INFO 10608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:39:53.621  INFO 10608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
-2021-08-25 00:39:54.036  INFO 10608 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:39:54.037  INFO 10608 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:39:54.037  INFO 10608 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:39:54.037  INFO 10608 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:39:54.107  INFO 10608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:39:54.114  INFO 10608 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.644 seconds (JVM running for 2.688)
-2021-08-25 00:39:54.116  INFO 10608 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:39:54.179  INFO 10608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:39:54.249  INFO 10608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:39:54.283  INFO 10608 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集所有基金的数据
-2021-08-25 00:40:41.388  INFO 8104 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 8104 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:40:41.390  INFO 8104 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:40:41.957  WARN 8104 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:40:42.241  INFO 8104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:40:42.248  INFO 8104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:40:42.249  INFO 8104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:40:42.326  INFO 8104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:40:42.326  INFO 8104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 898 ms
-2021-08-25 00:40:42.740  INFO 8104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:40:42.740  INFO 8104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:40:42.740  INFO 8104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:40:42.741  INFO 8104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:40:42.811  INFO 8104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:40:42.819  INFO 8104 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.712 seconds (JVM running for 2.701)
-2021-08-25 00:40:42.820  INFO 8104 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:40:42.886  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:40:42.959  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:40:43.023  INFO 8104 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 数据库已经存在了资金的数据，不会再次采集
-2021-08-25 00:41:05.244  INFO 612 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 612 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:41:05.246  INFO 612 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:41:05.781  WARN 612 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:41:06.057  INFO 612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:41:06.063  INFO 612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:41:06.064  INFO 612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:41:06.137  INFO 612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:41:06.137  INFO 612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 852 ms
-2021-08-25 00:41:06.563  INFO 612 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:41:06.563  INFO 612 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:41:06.564  INFO 612 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:41:06.564  INFO 612 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:41:06.633  INFO 612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:41:06.640  INFO 612 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.7 seconds (JVM running for 2.728)
-2021-08-25 00:41:06.641  INFO 612 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:41:06.702  INFO 612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:41:06.774  INFO 612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:41:06.807  INFO 612 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集所有基金的数据
-2021-08-25 00:41:09.208  INFO 612 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 基金数据采集完毕
-2021-08-25 00:44:52.904  INFO 12892 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 12892 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:44:52.906  INFO 12892 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:44:53.478  WARN 12892 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:44:53.745  INFO 12892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:44:53.752  INFO 12892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:44:53.752  INFO 12892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:44:53.827  INFO 12892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:44:53.827  INFO 12892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 880 ms
-2021-08-25 00:44:54.340  INFO 12892 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:44:54.340  INFO 12892 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:44:54.341  INFO 12892 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:44:54.341  INFO 12892 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:44:54.411  INFO 12892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:44:54.418  INFO 12892 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.813 seconds (JVM running for 2.876)
-2021-08-25 00:44:54.419  INFO 12892 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:44:54.489  INFO 12892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:44:54.565  INFO 12892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:44:54.599  INFO 12892 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集所有基金的数据
-2021-08-25 00:51:29.426  INFO 15736 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 15736 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
-2021-08-25 00:51:29.428  INFO 15736 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
-2021-08-25 00:51:29.958  WARN 15736 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
-2021-08-25 00:51:30.220  INFO 15736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-08-25 00:51:30.226  INFO 15736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-08-25 00:51:30.227  INFO 15736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-25 00:51:30.300  INFO 15736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-08-25 00:51:30.301  INFO 15736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 837 ms
-2021-08-25 00:51:30.713  INFO 15736 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2021-08-25 00:51:30.714  INFO 15736 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2021-08-25 00:51:30.714  INFO 15736 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2021-08-25 00:51:30.714  INFO 15736 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2021-08-25 00:51:30.782  INFO 15736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-25 00:51:30.789  INFO 15736 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.656 seconds (JVM running for 2.633)
-2021-08-25 00:51:30.791  INFO 15736 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始查询本地是否包含公司的数据
-2021-08-25 00:51:30.853  INFO 15736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-08-25 00:51:30.924  INFO 15736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-08-25 00:51:30.956  INFO 15736 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 开始采集所有基金的数据
-2021-08-25 01:05:14.149  INFO 15736 --- [main] c.f.c.b.t.TiantianApplicationRunner      : 基金数据采集完毕
+2021-08-26 00:47:55.187  INFO 14984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-26 00:47:55.187  INFO 14984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-26 00:48:17.831  INFO 9348 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 9348 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:48:17.841  INFO 9348 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:48:18.415  WARN 9348 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:48:18.687  INFO 9348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:48:18.697  INFO 9348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:48:18.697  INFO 9348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:48:18.777  INFO 9348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:48:18.777  INFO 9348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2021-08-26 00:48:19.207  INFO 9348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:48:19.207  INFO 9348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:48:19.207  INFO 9348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:48:19.207  INFO 9348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:48:19.277  INFO 9348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:48:19.287  INFO 9348 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.738 seconds (JVM running for 2.846)
+2021-08-26 00:48:19.287  INFO 9348 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 开始查询本地是否包含公司的数据
+2021-08-26 00:48:19.347  INFO 9348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:48:19.417  INFO 9348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:48:19.527  INFO 9348 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:51:56.027  INFO 14104 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 14104 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:51:56.027  INFO 14104 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:51:56.628  WARN 14104 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:51:56.929  INFO 14104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:51:56.929  INFO 14104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:51:56.929  INFO 14104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:51:57.009  INFO 14104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:51:57.019  INFO 14104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 942 ms
+2021-08-26 00:51:57.519  INFO 14104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:51:57.519  INFO 14104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:51:57.519  INFO 14104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:51:57.519  INFO 14104 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:51:57.649  INFO 14104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:51:57.659  INFO 14104 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 2.031 seconds (JVM running for 3.26)
+2021-08-26 00:51:57.659  INFO 14104 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 开始查询本地是否包含公司的数据
+2021-08-26 00:51:57.679  INFO 14104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:51:57.769  INFO 14104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:51:57.879  INFO 14104 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 00:53:19.690  WARN 14104 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s661ms629µs300ns).
+2021-08-26 00:56:05.738  WARN 14104 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m50s196ms108µs).
+2021-08-26 00:56:33.285  INFO 14104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-26 00:56:33.285  INFO 14104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-26 00:58:41.193  INFO 16348 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 16348 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 00:58:41.203  INFO 16348 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 00:58:41.735  WARN 16348 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 00:58:41.995  INFO 16348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 00:58:42.005  INFO 16348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 00:58:42.005  INFO 16348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 00:58:42.075  INFO 16348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 00:58:42.085  INFO 16348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 842 ms
+2021-08-26 00:58:42.555  INFO 16348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 00:58:42.565  INFO 16348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 00:58:42.565  INFO 16348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 00:58:42.565  INFO 16348 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 00:58:42.655  INFO 16348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 00:58:42.665  INFO 16348 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.755 seconds (JVM running for 2.882)
+2021-08-26 00:58:42.665  INFO 16348 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 开始查询本地是否包含公司的数据
+2021-08-26 00:58:42.738  INFO 16348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 00:58:42.838  INFO 16348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 00:58:42.949  INFO 16348 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 数据库已经存在了资金的数据，不会再次采集
+2021-08-26 01:02:47.494  INFO 14140 --- [main] com.fund.screen.WebApplication           : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 14140 (D:\data\code\foundation\fund-data-screen\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-08-26 01:02:47.494  INFO 14140 --- [main] com.fund.screen.WebApplication           : No active profile set, falling back to default profiles: default
+2021-08-26 01:02:48.045  WARN 14140 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund.screen]' package. Please check your configuration.
+2021-08-26 01:02:48.308  INFO 14140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-26 01:02:48.308  INFO 14140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-26 01:02:48.308  INFO 14140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-26 01:02:48.388  INFO 14140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-26 01:02:48.388  INFO 14140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 853 ms
+2021-08-26 01:02:48.830  INFO 14140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-08-26 01:02:48.830  INFO 14140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-08-26 01:02:48.830  INFO 14140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-08-26 01:02:48.830  INFO 14140 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-08-26 01:02:48.900  INFO 14140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-26 01:02:48.910  INFO 14140 --- [main] com.fund.screen.WebApplication           : Started WebApplication in 1.703 seconds (JVM running for 2.741)
+2021-08-26 01:02:48.910  INFO 14140 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 开始查询本地是否包含公司的数据
+2021-08-26 01:02:48.980  INFO 14140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-26 01:02:49.050  INFO 14140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-26 01:02:49.150  INFO 14140 --- [main] c.f.c.b.t.s.TiantianApplicationRunner    : 数据库已经存在了资金的数据，不会再次采集

@@ -1,4 +1,4 @@
-package com.fund.capture.biz.tiantian;
+package com.fund.capture.biz.tiantian.start;
 
 import com.fund.capture.basic.table.bean.Company;
 import com.fund.capture.basic.table.bean.FundBaseInfo;
@@ -35,10 +35,14 @@ public class TiantianApplicationRunner implements ApplicationRunner {
     @Resource
     private FundBaseInfoMapper fundBaseInfoMapper;
 
+    @Resource
+    private FundDetailInfoCapture fundDetailInfoCapture;
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
         initCompanyData();
         initFundBaseInfo();
+        fundDetailInfoCapture.initFundDetailInfo();
     }
 
     private void initCompanyData(){
