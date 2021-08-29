@@ -10,7 +10,7 @@ public class FundBaseInfo implements Serializable {
     private static final Long SerialVersionUID = 1L;
 
     @Id
-    private String id;
+    private Integer id;
     private String fcode;
     private String shortName;
     private String detailDataDate;

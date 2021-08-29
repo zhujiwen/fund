@@ -3,7 +3,6 @@ package com.fund.capture.biz.tiantian.service;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.fund.capture.basic.constant.Constant;
 import com.fund.capture.basic.table.bean.FundBaseInfo;
 import com.fund.capture.basic.table.bean.FundDetailInfo;
 import com.fund.capture.basic.util.HttpUtils;
@@ -51,11 +50,9 @@ public class FundCaptureService {
                 JSONArray qxjj = t1.getJSONArray("QXJJ");
                 for (int i = 0; i < qxjj.size(); i++) {
                     JSONObject qxjjJSONObject = qxjj.getJSONObject(i);
-                    String id = qxjjJSONObject.getString("_id");
                     String fcode = qxjjJSONObject.getString("FCODE");
                     String shortName = qxjjJSONObject.getString("SHORTNAME");
                     FundBaseInfo fundBaseInfo = new FundBaseInfo();
-                    fundBaseInfo.setId(id);
                     fundBaseInfo.setFcode(fcode);
                     fundBaseInfo.setShortName(shortName);
                     fundBaseInfoList.add(fundBaseInfo);
