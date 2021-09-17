@@ -11,7 +11,7 @@ public class FundDetailInfo implements Serializable {
 
   @Id
   private Long id;
-  private String fcode;
+  private Integer fcode;
   private String fsrq;
   private String dwjz;
   private String ljjz;

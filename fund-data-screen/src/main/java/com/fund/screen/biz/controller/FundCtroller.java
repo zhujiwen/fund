@@ -1,16 +1,13 @@
 package com.fund.screen.biz.controller;
 
-import com.fund.capture.basic.table.bean.FundDetailInfo;
 import com.fund.screen.basic.custom.Custom1;
+import com.fund.screen.biz.util.ViewUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -19,6 +16,7 @@ public class FundCtroller {
 
     @Resource
     private Custom1 custom1;
+
 
     /**
      * 获取基金数量
@@ -51,7 +49,7 @@ public class FundCtroller {
     /**
      * 获取某只基金的某段时间历史数据
      */
-    public Map<String, Object> queryFundByDate() {
+    public Map<String, Object> queryFundHistory() {
         Map<String, Object> resultMap = new HashMap<>();
         try {
 
