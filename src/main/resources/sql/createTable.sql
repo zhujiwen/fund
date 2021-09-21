@@ -9,7 +9,7 @@ create table if not exists company
 
 CREATE TABLE fund_base_info
 (
-    id         varchar(20) auto_increment NOT NULL COMMENT '唯一id',
+    id         bigint auto_increment NOT NULL COMMENT '唯一id',
     fcode      varchar(100) COMMENT '基金code',
     short_name varchar(100) COMMENT '资金名称',
     detail_data_date varchar(10) comment '基金明细数据最新时间',
