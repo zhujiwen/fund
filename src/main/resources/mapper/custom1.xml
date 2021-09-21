@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fund.basic.custom.Custom1">
+
+    <select id="queryFundBaseInfoList" resultType="com.fund.basic.table.bean.FundBaseInfo">
+        select *
+        from fund.fund_base_info
+        limit #{start},#{size}
+    </select>
+
+    <select id="queryFundDetailInfoList" resultType="com.fund.basic.table.bean.FundDetailInfo">
+        select fdi.*
+        from (select fcode from fund.fund_base_info limit #{start},#{size}) fbi
+                 left join fund.fund_detail_info fdi
+                           on fbi.fcode = fdi.fcode
+
+    </select>
+
+    <select id="queryFundDetailInfoListByStartDate" resultType="com.fund.basic.table.bean.FundDetailInfo">
+        select fcode, fsrq, dwjz, ljjz, jzzzl
+        from fund.fund_detail_info
+        where fcode = #{fcode}
+          and fsrq >= #{startDate}
+    </select>
+</mapper>

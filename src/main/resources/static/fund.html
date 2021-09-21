@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基金信息</title>
+
+    <script type="text/javascript" src="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js"></script>
+    <script src="echarts.min.js"></script>
+    <link rel="stylesheet" href="https://heerey525.github.io/layui-v2.4.3/layui/css/layui.css">
+
+    <style>
+        head, body {
+            height: 1080px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    </style>
+</head>
+<body style="overflow: hidden">
+
+<div style="position: fixed;height:10%;width: 100%;left: 0px;top:0px">
+    <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item layui-this"><a href="javascript:showAllFund(1,document.getElementById('pageSize').value);">所有基金</a></li>
+        <li class="layui-nav-item"><a href="javascript:showCollect();">我的收藏</a></li>
+        <li class="layui-nav-item"><a href="javascript:showPurchase();">我的购买</a></li>
+
+        <span style="display: inline;float: right;margin-top: 20px">
+            总基金数：<font id="fundSize"></font>&nbsp;
+            总共页码：<font id="pageNum"></font>&nbsp;
+            每页大小：
+            <select onchange="changePageSize()" name="" id="pageSize" lay-filter="mySelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20" selected>20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+            </select>
+        </span>
+    </ul>
+</div>
+
+<div id="board" style="height: 80%;width: 100%;top: 10%;position: fixed;overflow-y: scroll">
+</div>
+
+<div id="pageButton" style="height: 10%;position: fixed;bottom: 0px"></div>
+<script>
+    var ip = "192.168.0.105:8080";
+
+    layui.use('element', function () {
+    });
+
+    function changePageSize() {
+        var pageSize = document.getElementById('pageSize').value
+        var fundSize = document.getElementById("fundSize").innerText
+        var pageSum = Math.ceil(fundSize / pageSize)
+        document.getElementById("pageNum").innerText = pageSum
+        layui.use(['laypage', 'layer'], function () {
+            var laypage = layui.laypage
+                , layer = layui.layer;
+            laypage.render({
+                elem: 'pageButton'
+                , count: pageSum
+                , limit: 1
+                , jump: function (obj, first) {
+                    //触发下一页或者某一页事件
+                    var curPageNum = obj.curr
+                    var pageSize = document.getElementById('pageSize').value
+                    showAllFund(curPageNum,pageSize)
+                }
+            })
+        });
+    }
+    
+    function init() {
+        var httpRequest = new XMLHttpRequest()
+        httpRequest.open('GET', 'http://' + ip + '/fund/queryFundSize', true);
+        httpRequest.send();
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                var json = httpRequest.responseText;//获取到json字符串，还需解析
+                var data = JSON.parse(json)
+                if (data["code"] == 1) {
+                    var fundSize = data["data"]
+                    document.getElementById("fundSize").innerText = fundSize
+                    var pageSize = document.getElementById("pageSize").value
+                    var pageSum = Math.ceil(fundSize / pageSize)
+                    document.getElementById("pageNum").innerText = pageSum
+
+                    layui.use(['laypage', 'layer'], function () {
+                        var laypage = layui.laypage
+                            , layer = layui.layer;
+                        laypage.render({
+                            elem: 'pageButton'
+                            , count: pageSum
+                            , limit: 1
+                            , jump: function (obj, first) {
+                                //触发下一页或者某一页事件
+                                var curPageNum = obj.curr
+                                var pageSize = document.getElementById('pageSize').value
+                                showAllFund(curPageNum,pageSize)
+                            }
+                        })
+                    });
+                }
+            }
+        };
+    }
+
+    function showAllFund(curPageNum, pageSize) {
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open('POST', "http://" + ip + "/fund/queryNFundDetailInfoList", true);
+        httpRequest.setRequestHeader("Content-type", "application/json");
+        var start = (curPageNum - 1) * pageSize
+        var obj = {start: start, size: pageSize};
+        httpRequest.send(JSON.stringify(obj));
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                clearBoard()
+                var json = httpRequest.responseText;
+                var result = JSON.parse(json)
+                for (var i in result.data) {
+                    var var1 = result.data[i]
+                    var fundCode = var1.fundCode
+                    createFundBoard(fundCode)
+                    var myChart = echarts.init(document.getElementById(fundCode))
+                    myChart.setOption(option = {
+                        title: {
+                            text: var1.fundName + "[" + var1.fundCode + "]"
+                        },
+                        tooltip: {},
+                        legend: {
+                            data: ['基金净值']
+                        },
+                        xAxis: {
+                            data: var1.fsrq
+                        },
+                        yAxis: {
+                            max: var1.max,
+                            min: var1.min
+                        },
+                        series: [
+                            {
+                                name: '基金净值',
+                                type: 'line',
+                                data: var1.dwjz
+                            }
+                        ]
+                    })
+                }
+            }
+        };
+
+    }
+
+    function createFundBoard(fundCode) {
+        var div = document.createElement('div');
+        div.id = fundCode
+        div.style.height = '100%'
+        div.style.width = '50%'
+        div.style.float = 'left'
+        var board = document.getElementById('board')
+        board.appendChild(div)
+    }
+
+    function showCollect() {
+        alert("功能开发中...")
+        clearBoard()
+    }
+
+    function showPurchase() {
+        alert("功能开发中...")
+        clearBoard()
+    }
+
+    function clearBoard() {
+        var board = document.getElementById("board");
+        board.innerHTML = ''
+    }
+
+    window.onload = function (ev) {
+        init()
+        showAllFund()
+    }
+</script>
+</body>
+</html>
