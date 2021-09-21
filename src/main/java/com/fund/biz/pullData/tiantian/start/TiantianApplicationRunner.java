@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.List;
 
-//@Component
+@Component
 public class TiantianApplicationRunner implements ApplicationRunner {
     private static final Logger logger = LoggerFactory.getLogger(TiantianApplicationRunner.class);
 

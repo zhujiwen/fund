@@ -3,10 +3,7 @@ package com.fund.biz.view.controller;
 import com.fund.basic.constant.Constant;
 import com.fund.biz.view.service.FundService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.time.LocalDate;
@@ -16,6 +13,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/fund")
+@CrossOrigin(originPatterns = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 public class FundCtroller {
 
     @Resource

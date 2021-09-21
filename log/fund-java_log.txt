@@ -102,3 +102,60 @@
 2021-09-21 17:01:09.475  INFO 3268 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2021-09-21 18:36:33.009  INFO 3268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-09-21 18:36:33.024  INFO 3268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-21 22:17:18.334  INFO 7384 --- [main] com.fund.WebApplication                  : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 7384 (D:\data\code\foundation\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-09-21 22:17:18.336  INFO 7384 --- [main] com.fund.WebApplication                  : No active profile set, falling back to default profiles: default
+2021-09-21 22:17:19.180  WARN 7384 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund]' package. Please check your configuration.
+2021-09-21 22:17:19.472  INFO 7384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-21 22:17:19.479  INFO 7384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-21 22:17:19.479  INFO 7384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-21 22:17:19.580  INFO 7384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-21 22:17:19.580  INFO 7384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1191 ms
+2021-09-21 22:17:20.153  INFO 7384 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-09-21 22:17:20.153  INFO 7384 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-09-21 22:17:20.154  INFO 7384 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-09-21 22:17:20.154  INFO 7384 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-09-21 22:17:20.268  INFO 7384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-21 22:17:20.275  INFO 7384 --- [main] com.fund.WebApplication                  : Started WebApplication in 2.412 seconds (JVM running for 3.734)
+2021-09-21 22:17:25.848  INFO 7384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-21 22:17:25.848  INFO 7384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-21 22:17:25.849  INFO 7384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-09-21 22:17:27.443  INFO 7384 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-21 22:17:27.564  INFO 7384 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-21 22:23:46.809  INFO 8268 --- [main] com.fund.WebApplication                  : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 8268 (D:\data\code\foundation\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-09-21 22:23:46.809  INFO 8268 --- [main] com.fund.WebApplication                  : No active profile set, falling back to default profiles: default
+2021-09-21 22:23:47.309  WARN 8268 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund]' package. Please check your configuration.
+2021-09-21 22:23:47.644  INFO 8268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-21 22:23:47.654  INFO 8268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-21 22:23:47.654  INFO 8268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-21 22:23:47.744  INFO 8268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-21 22:23:47.744  INFO 8268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
+2021-09-21 22:23:48.194  INFO 8268 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-09-21 22:23:48.194  INFO 8268 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-09-21 22:23:48.194  INFO 8268 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-09-21 22:23:48.194  INFO 8268 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-09-21 22:23:48.304  INFO 8268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-21 22:23:48.304  INFO 8268 --- [main] com.fund.WebApplication                  : Started WebApplication in 1.757 seconds (JVM running for 2.82)
+2021-09-21 22:23:54.926  INFO 8268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-21 22:23:54.926  INFO 8268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-21 22:23:54.927  INFO 8268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-09-21 22:23:56.115  INFO 8268 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-21 22:23:56.217  INFO 8268 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-21 22:28:51.667  INFO 14716 --- [main] com.fund.WebApplication                  : Starting WebApplication using Java 1.8.0_211 on 烤猪人 with PID 14716 (D:\data\code\foundation\target\classes started by zhujiwen in D:\data\code\foundation)
+2021-09-21 22:28:51.677  INFO 14716 --- [main] com.fund.WebApplication                  : No active profile set, falling back to default profiles: default
+2021-09-21 22:28:52.436  WARN 14716 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.fund]' package. Please check your configuration.
+2021-09-21 22:28:52.791  INFO 14716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-21 22:28:52.800  INFO 14716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-21 22:28:52.800  INFO 14716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-21 22:28:52.991  INFO 14716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-21 22:28:52.991  INFO 14716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1264 ms
+2021-09-21 22:28:53.470  INFO 14716 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-09-21 22:28:53.470  INFO 14716 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-09-21 22:28:53.470  INFO 14716 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-09-21 22:28:53.470  INFO 14716 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-09-21 22:28:53.613  INFO 14716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-21 22:28:53.623  INFO 14716 --- [main] com.fund.WebApplication                  : Started WebApplication in 2.379 seconds (JVM running for 3.61)
+2021-09-21 22:28:56.003  INFO 14716 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-21 22:28:56.003  INFO 14716 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-21 22:28:56.004  INFO 14716 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-09-21 22:28:56.935  INFO 14716 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-21 22:28:57.006  INFO 14716 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
