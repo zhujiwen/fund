@@ -19,7 +19,7 @@ CREATE TABLE fund_base_info
 
 create table fund_detail_info
 (
-    id    bigint primary key comment '自增id',
+    id    bigint auto_increment primary key comment '自增id',
     fcode int comment '基金code',
     fsrq  varchar(20) comment '净值日期',
     dwjz  varchar(20) comment '单位净值',
